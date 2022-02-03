@@ -4,6 +4,80 @@
 @import 'libs';
 @import 'global';
 
+.header{
+  padding: 64px 0;
+  margin-bottom: -160px;
+  &__wrapper{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__account-img{
+    margin-right: 8px;
+  }
+  &__account-text{
+    color: #fff;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__list-item+.menu__list-item{
+    margin-left: 40px;
+  }
+  &__list-link{
+    color: #fff;
+  }
+}
+
+.banner{
+  height: 1900px;
+  background-image: url(../images/header-bg.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__wrapper{
+    max-width: 980px;
+    width: 100%;
+    padding: 287px 15px 0;
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: 88px;
+    line-height: 100px;
+    @extend %chronicle-display-semibold;
+    margin: 32px 0;
+  }
+  &__btn{
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow_down.svg');
+      width: 16px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
 
 
 

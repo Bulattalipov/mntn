@@ -1,0 +1,38 @@
+body{
+  font-size: 18px;
+  line-height: 32px;
+  @extend %gilroy-bold;
+  color: #fff;
+}
+
+
+.container{
+  max-width: 1790px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-2{
+  max-width: 1492px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.subtitle{
+  color: #FBD784;
+  padding-left: 104px;
+  position: relative;
+  letter-spacing: 6px;
+  line-height: 22px;
+  text-transform: uppercase;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
