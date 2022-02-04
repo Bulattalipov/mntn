@@ -1,8 +1,10 @@
 body{
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 32px;
   @extend %gilroy-bold;
   color: #fff;
+  background-color: #0B1D26;
 }
 
 
@@ -13,8 +15,8 @@ body{
 }
 
 .container-2{
-  max-width: 1492px;
-  padding: 0 15px;
+  max-width: 1572px;
+  padding: 0 55px;
   margin: 0 auto;
 }
 
@@ -36,3 +38,13 @@ body{
     transform: translateY(-50%);
   }
 }
+
+.h2__title{
+  font-size: 64px;
+  line-height: 77px;
+  @extend %chronicle-display-semibold;
+  max-width: 555px;
+  margin: 27px 0;
+}
+
+

@@ -49,9 +49,9 @@
   background-size: cover;
   background-position: center;
   &__wrapper{
-    max-width: 980px;
+    max-width: 1060px;
     width: 100%;
-    padding: 287px 15px 0;
+    padding: 287px 55px 0;
     margin: 0 auto;
   }
   &__title{
@@ -79,6 +79,111 @@
   }
 }
 
+
+.step{
+  margin-top: -500px;
+}
+
+.step-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  &__content{
+    margin-top: 38px;
+    margin-right: 50px;
+  }
+  &__content-number{
+    font-size: 240px;
+    line-height: 240px;
+    @extend %gilroy-bold;
+    opacity: 0.1;
+  }
+  &__content-info{
+    margin: -130px 0 0 150px;
+    width: 632px;
+  }
+  &__content-infoText{
+    margin-bottom: 27px;
+  }
+  &__content-infoLink{
+    line-height: 22px;
+    color: #FBD784;
+    padding-right: 40px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow_right.svg');
+      width: 24px;
+      height: 16px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__box{
+    max-width: 566px;
+    width: 100%;
+  }
+  &__box-img{
+    object-fit: cover;
+  }
+  &--reflection{
+    .step-item__content{
+      order: 2;
+      margin-right: 0;
+      margin-left: 50px;
+    }
+
+  }
+}
+
+
+
+
+.footer{
+  margin-bottom: 120px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__info-text{
+    margin-top: 24px;
+    line-height: 32px;
+    width: 303px;
+    margin-bottom: auto;
+  }
+  &__info-copy{
+    line-height: 32px;
+    opacity: 0.5;
+    @extend %gilroy-medium;
+  }
+  &__items{
+    display: flex;
+    max-width: 566px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__item-title{
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin-bottom: 24px;
+  }
+  &__item-listItem+.footer__item-listItem{
+    margin-top: 16px;
+  }
+  &__item-listLink{
+    line-height: 32px;
+    @extend %gilroy-medium;
+    color: #fff;
+  }
+}
 
 
 
