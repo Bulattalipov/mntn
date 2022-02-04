@@ -7,6 +7,10 @@
 .header{
   padding: 64px 0;
   margin-bottom: -160px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
   &__wrapper{
     max-width: 100%;
     width: 100%;
@@ -24,6 +28,73 @@
   }
   &__account-text{
     color: #fff;
+  }
+  &__btn{
+    display: none;
+    position: relative;
+    z-index: 101;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  &__btn-box{
+    display: flex;
+    height: 30px;
+    width: 36px;
+    border: none;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    &.header__btn-box--active {
+      &:before,
+      &:after {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      &:before {
+        transform: rotate(-45deg);
+      }
+      &:after {
+        transform: rotate(45deg);
+      }
+      span {
+        width: 0;
+      }
+    }
+    &:before,
+    &:after{
+      transition: all 0.3s;
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      height: 3px;
+      right: 0;
+    }
+    &:before{
+      width: 29px;
+      top: 0;
+    }
+    &:after {
+      width: 23px;
+      bottom: 0;
+    }
+    span {
+      transition: all 0.3s;
+      width: 36px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 50px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -48,6 +119,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+  }
   &__wrapper{
     max-width: 1060px;
     width: 100%;
@@ -64,6 +146,7 @@
     display: inline-block;
     position: relative;
     padding-right: 32px;
+    cursor: pointer;
     &:before{
       content: '';
       position: absolute;
@@ -82,6 +165,7 @@
 
 .step{
   margin-top: -500px;
+  position: relative;
 }
 
 .step-item{
@@ -124,9 +208,12 @@
   &__box{
     max-width: 566px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   &__box-img{
     object-fit: cover;
+    object-position: center;
   }
   &--reflection{
     .step-item__content{
@@ -142,6 +229,7 @@
 
 
 .footer{
+  margin-top: 200px;
   margin-bottom: 120px;
   &__wrapper{
     display: flex;
@@ -182,6 +270,12 @@
     line-height: 32px;
     @extend %gilroy-medium;
     color: #fff;
+  }
+  &__copy{
+    display: none;
+    line-height: 32px;
+    opacity: 0.5;
+    @extend %gilroy-medium;
   }
 }
 

@@ -1,0 +1,254 @@
+@media (max-width: 1440px){
+  .header{
+    padding: 34px 0;
+    margin-bottom: -100px;
+  }
+  .banner{
+    height: 1300px;
+    &__wrapper{
+      padding: 200px 55px 0;
+    }
+  }
+  .step{
+    margin-top: -400px;
+  }
+  .step-item {
+    align-items: center;
+    margin-bottom: 150px;
+    &__content-number{
+      font-size: 180px;
+      line-height: 200px;
+    }
+    &__content-info{
+      margin: -105px 0 0 50px;
+      width: 550px;
+    }
+    &__box-img{
+      max-height: 450px;
+    }
+  }
+  .footer{
+    margin-top: 170px;
+    margin-bottom: 70px;
+    &__items{
+      max-width: 440px;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .banner__title {
+    font-size: 75px;
+    line-height: 92px;
+  }
+  .h2__title{
+    font-size: 60px;
+    line-height: 72px;
+  }
+  .step-item{
+    margin-bottom: 100px;
+    &__content-number{
+      font-size: 140px;
+      line-height: 174px;
+    }
+  }
+}
+
+@media (max-width: 1050px){
+  .step-item{
+    justify-content: center;
+    margin-bottom: 80px;
+    &--reflection{
+      .step-item__content {
+        margin-left: 0px;
+      }
+    }
+    &__content{
+      margin-right: 0;
+      margin-top: 0;
+    }
+    &__content-info{
+      width: 100%;
+      margin: -85px 0 0 0px;
+    }
+    &__box{
+      display: none;
+    }
+  }
+  .h2__title {
+    font-size: 50px;
+    line-height: 60px;
+}
+}
+
+
+@media (max-width: 1000px){
+  .banner{
+    height: 1169px;
+    &:before{
+      height: 500px;
+    }
+    &__title{
+      font-size: 65px;
+      line-height: 80px;
+    }
+  }
+  .footer{
+    margin-bottom: 40px;
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__info-text{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__info-copy{
+      display: none;
+    }
+    &__copy{
+      margin-top: 25px;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .step-item{
+    &__content-number{
+      font-size: 115px;
+      line-height: 168px;
+    }
+  }
+  .h2__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 660px){
+  .container-2{
+    padding: 0 15px;
+  }
+  .header{
+    &__account{
+      margin-left: auto;
+    }
+    &__btn{
+      display: flex;
+    }
+  }
+  .menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-200%);
+    transition: all .3s;
+    background-color: #66757A;
+    padding-top: 113px;
+    z-index: -1;
+    &--active{
+      transform: translateY(0);
+    }
+    &__list{
+      display: flex;
+      flex-direction: column;
+    }
+    &__list-item+.menu__list-item{
+      margin-left: 0;
+    }
+    &__list-item{
+      width: 100%;
+    }
+    &__list-link{
+      display: block;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      &:hover{
+        background-color: #7a888d;
+      }
+    }
+  }
+  .subtitle{
+    font-size: 14px;
+    padding-left: 60px;
+    &:before{
+      width: 40px;
+    }
+  }
+  .banner{
+    height: 1000px;
+    background-position: center top;
+    &__wrapper{
+      padding: 150px 25px 0;
+    }
+    &__title{
+      font-size: 50px;
+      line-height: 70px;
+      margin: 20px 0;
+    }
+    &__btn{
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .step{
+    margin-top: -320px;
+  }
+  .step-item{
+    &__content-number{
+      font-size: 100px;
+      line-height: 150px;
+    }
+    &__content-infoText{
+      line-height: 25px;
+    }
+  }
+  .h2__title {
+    font-size: 37px;
+    line-height: 44px;
+  }
+  .footer{
+    margin-bottom: 15px;
+    &__info-text{
+      margin-bottom: 25px;
+    }
+    &__items{
+      flex-direction: column;
+    }
+    &__item{
+      &:first-child{
+        margin-bottom: 30px;
+      }
+    }
+    &__item-listItem+.footer__item-listItem {
+      margin-top: 7px;
+    }
+    &__item-title{
+      margin-bottom: 15px;
+    }
+    &__copy{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 420px){
+  .banner__title{
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (max-width: 360px){
+  .header__btn{
+    margin-left: 15px;
+  }
+}
