@@ -1,7 +1,3 @@
-$ (function (){
-
-});
-
 
 let btn = document.querySelector(".header__btn-box");
 let menu = document.querySelector('.menu');
