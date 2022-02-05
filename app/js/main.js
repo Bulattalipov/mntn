@@ -7,3 +7,14 @@ btn.addEventListener("click", function(){
   menu.classList.toggle("menu--active");
 })
 
+
+
+let header = document.querySelector('.header');
+
+    window.addEventListener('scroll', ()=>{
+        if(pageYOffset >= header.clientHeight){
+            header.style['background-color'] = '#66757A';
+        } else{
+            header.style['background-color'] = 'transparent';
+        }
+    });
